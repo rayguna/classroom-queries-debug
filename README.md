@@ -36,3 +36,5 @@ Notes:
 ```
 post("/insert_course", { :controller => "courses", :action => "create" })
 ```
+
+10. Use the web-page console prompt to query the database. The console acts as an irb platform. For instance, I queries parameters to know what the key value pairs are to debug the error.
