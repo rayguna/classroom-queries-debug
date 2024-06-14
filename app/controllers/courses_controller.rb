@@ -43,8 +43,8 @@ class CoursesController < ApplicationController
   end
 
   def destroy
-    the_id = params.fetch("path")
-    @course = Course.where({ :id => the_id }).at(0)
+    the_id = params.fetch("path_id")
+    @course = Course.all.where({ :id => the_id }).at(0)
 
     @course.destroy
 
