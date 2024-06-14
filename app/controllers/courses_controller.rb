@@ -14,7 +14,7 @@ class CoursesController < ApplicationController
 
   def create
     @course = Course.new
-    @course.title = params.fetch("q_title")
+    @course.title = params.fetch("query_title")
     @course.term_offered = params.fetch("query_term")
     @course.department_id = params.fetch("query_department_id")
 
@@ -27,7 +27,7 @@ class CoursesController < ApplicationController
   end
 
   def update
-    the_id = params.fetch("path_id")
+    the_id = params.fetch("query_department_id")
     @course = Course.all.where({ :id => the_id }).at(0)
 
     @course.title = params.fetch("query_title")

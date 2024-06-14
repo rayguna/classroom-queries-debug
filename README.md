@@ -29,7 +29,7 @@ Notes:
   end
 ```
 
-8. Remember to save often. To return to the last commit and discard all recent changes, type in the terminal git reset -hard HEAD.
+8. Remember to save often. To return to the last commit and discard all recent changes, type in the terminal `git reset --hard HEAD`.
 
 9. In the config/routes.rb, the function get should have been post:
 
@@ -38,3 +38,5 @@ post("/insert_course", { :controller => "courses", :action => "create" })
 ```
 
 10. Use the web-page console prompt to query the database. The console acts as an irb platform. For instance, I queries parameters to know what the key value pairs are to debug the error.
+
+11. Renamed StudentsController to irrelevant_controller because it caused conflict with stidents_controller.
