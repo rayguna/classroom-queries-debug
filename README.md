@@ -28,3 +28,5 @@ Notes:
     render({ :template => "departments/show" })
   end
 ```
+
+8. Remember to save often. To return to the last commit and discard all recent changes, type in the terminal git reset -hard HEAD.
