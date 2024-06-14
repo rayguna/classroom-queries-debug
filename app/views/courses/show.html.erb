@@ -87,7 +87,7 @@
     Number of enrolled students
   </dt>
   <dd>
-    <%= Enrollment.where({ :course_id => @course.id }) %>
+    <%= Enrollment.where({ :course_id => @course.id }).count %>
   </dd>
 </dl>
 
