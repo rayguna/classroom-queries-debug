@@ -30,3 +30,9 @@ Notes:
 ```
 
 8. Remember to save often. To return to the last commit and discard all recent changes, type in the terminal git reset -hard HEAD.
+
+9. In the config/routes.rb, the function get should have been post:
+
+```
+post("/insert_course", { :controller => "courses", :action => "create" })
+```
